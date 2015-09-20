@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03FCCA29-608B-4618-A8A2-E37AB8966A53</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NoNa_App</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89ECED7805B82DAB902ABBE71C8842B6ACB0105A</key>
+		<string>https://github.com/MoreNiceJay/NoNa_App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NoNa_App.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89ECED7805B82DAB902ABBE71C8842B6ACB0105A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MoreNiceJay/NoNa_App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>89ECED7805B82DAB902ABBE71C8842B6ACB0105A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89ECED7805B82DAB902ABBE71C8842B6ACB0105A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NoNa_App</string>
+		</dict>
+	</array>
+</dict>
+</plist>
