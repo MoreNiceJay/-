@@ -18,6 +18,15 @@ class CustomLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //페북 퍼미션
+        
+        
+    
+        
+        
+    
+    
+        
     self.actInd.center = self.view.center
         self.actInd.hidesWhenStopped = true
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
@@ -76,4 +85,32 @@ class CustomLoginViewController: UIViewController {
     }
     */
 
+    @IBAction func facebookLogin(sender: AnyObject) {
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(["pulbic_profile", "email"]) { (user : PFUser?, error : NSError?) -> Void in
+            
+            if (error != nil)
+            {
+                //Display an alert message
+                
+                let alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
+            }
+            print(user)
+            print("Current user token = \(FBSDKAccessToken.currentAccessToken().userID)")
+            
+            if(FBSDKAccessToken.currentAccessToken() != nil)
+            {
+                let mainPage = self.storyboard?.instantiateViewControllerWithIdentifier("MainHomeTVC") as! MainHomeTVC
+                let mainPageNav = UINavigationController(rootViewController: mainPage)
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                
+                appDelegate.window?.rootViewController = mainPage
+            }
+            
+            
+            
+        }
+
+    }
+   
 }

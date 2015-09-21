@@ -265,6 +265,7 @@
                                 </state>
                                 <connections>
                                     <action selector="resisterButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2kP-8Z-9at"/>
+                                    <segue destination="gbO-Mw-mD0" kind="show" id="Hrb-up-Ubs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEE-Lr-1D2">
@@ -304,6 +305,13 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2k-gJ-uTV">
+                                <rect key="frame" x="191" y="465" width="33" height="30"/>
+                                <state key="normal" title="Face"/>
+                                <connections>
+                                    <action selector="facebookLogin:" destination="eBg-jX-NLr" eventType="touchUpInside" id="xgk-BE-HIH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -356,14 +364,14 @@
         <!--Book Store-->
         <scene sceneID="IUK-Xf-PuS">
             <objects>
-                <tableViewController id="ni4-ey-v63" customClass="MainHomeTVC" customModule="NoNa_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainHomeTVC" id="ni4-ey-v63" customClass="MainHomeTVC" customModule="NoNa_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="254" sectionHeaderHeight="22" sectionFooterHeight="22" id="Waj-oz-kbh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="254" id="Gmy-mF-hAu" customClass="MainHomeTVCELL" customModule="NoNa_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="414" height="254"/>
+                                <rect key="frame" x="0.0" y="22" width="414" height="254"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gmy-mF-hAu" id="nID-7J-9KK">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
@@ -448,13 +456,13 @@
                                     <constraint firstAttribute="height" constant="442" id="uwp-mJ-rIW"/>
                                 </constraints>
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="tna-QQ-eEf">
-                                    <rect key="frame" x="0.0" y="135" width="414" height="37"/>
+                                    <rect key="frame" x="0.0" y="71" width="414" height="37"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="color" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" textLabel="oag-Fu-Wxl" detailTextLabel="YZD-SF-0Wc" rowHeight="49" style="IBUITableViewCellStyleSubtitle" id="X3n-vZ-5ir">
-                                        <rect key="frame" x="0.0" y="86" width="414" height="49"/>
+                                        <rect key="frame" x="0.0" y="22" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X3n-vZ-5ir" id="mq1-i9-3VA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
@@ -646,6 +654,9 @@
                                     <color key="titleColor" red="0.0" green="0.0002002173296" blue="0.65404040399999996" alpha="0.52000000000000002" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eBg-jX-NLr" kind="show" id="Rkn-a5-N2R"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bany" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-oN-80F">
                                 <rect key="frame" x="0.0" y="139" width="414" height="55"/>
